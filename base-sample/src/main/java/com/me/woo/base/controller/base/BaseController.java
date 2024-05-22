@@ -29,9 +29,11 @@ public class BaseController {
         List<Object> dummyList = baseService.getDummyList("dummyList");
 
         result.put("base", base);
+
         result.put("dummy", dummy.getData());
         result.put("dummyString", dummy.toDataString());
         result.put("dummyMap", dummyMap);
+
         result.put("dummys", dummys.getData());
         result.put("dummysString", dummys.toDataString());
         result.put("dummyList", dummyList);
