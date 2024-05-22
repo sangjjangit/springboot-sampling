@@ -1,0 +1,13 @@
+plugins {
+    id 'org.springframework.boot' version '3.2.4'
+}
+
+dependencies {
+
+    implementation "org.springframework.boot:spring-boot-starter-web"
+
+//    implementation "org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:$mybatisSpringVersion"
+//    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3"
+//    implementation "com.mysql:mysql-connector-j:8.3.0"
+//    implementation "com.mysql:mysql-connector-j"
+}
