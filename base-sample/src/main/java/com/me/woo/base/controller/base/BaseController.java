@@ -37,6 +37,7 @@ public class BaseController {
         result.put("dummys", dummys.getData());
         result.put("dummysString", dummys.toDataString());
         result.put("dummyList", dummyList);
+
         return ResponseEntity.ok(result);
     }
 }

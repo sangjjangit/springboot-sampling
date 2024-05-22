@@ -9,4 +9,5 @@ public class Dummy {
 
     private String id;
     private String name;
+    private String dummy;
 }
