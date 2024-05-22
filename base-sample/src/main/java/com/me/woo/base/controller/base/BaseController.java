@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RequiredArgsConstructor
@@ -22,10 +23,18 @@ public class BaseController {
         Map<String, Object> result = new HashMap<>();
 
         Base base = baseService.selectBase("baseId");
-        ServiceDto serviceDto = baseService.getDummy("dummyId");
+        ServiceDto dummy = baseService.getDummy("dummy");
+        Map<String, Object> dummyMap = baseService.getDummyMap("dummyMap");
+        ServiceDto dummys = baseService.getDummys("dummys");
+        List<Object> dummyList = baseService.getDummyList("dummyList");
 
         result.put("base", base);
-        result.put("dummy", serviceDto.getData());
+        result.put("dummy", dummy.getData());
+        result.put("dummyString", dummy.toDataString());
+        result.put("dummyMap", dummyMap);
+        result.put("dummys", dummys.getData());
+        result.put("dummysString", dummys.toDataString());
+        result.put("dummyList", dummyList);
         return ResponseEntity.ok(result);
     }
 }

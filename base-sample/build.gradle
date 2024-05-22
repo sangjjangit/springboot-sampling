@@ -5,6 +5,7 @@ plugins {
 dependencies {
 
     implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "com.google.code.gson:gson"
 
 //    implementation "org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:$mybatisSpringVersion"
 //    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3"
